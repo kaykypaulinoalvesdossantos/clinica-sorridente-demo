@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Manrope", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --brand-bg: #fffaf0;
+  --brand-surface: #ffffff;
+  --brand-text: #191713;
+  --brand-muted: #6f6658;
+  --brand-primary: #1f1a13;
+  --brand-secondary: #c99b32;
+  --brand-accent: #f5df9d;
+  --brand-soft: #f7efe0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--brand-bg);
+  color: var(--brand-text);
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--brand-secondary);
+  color: #ffffff;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tooth-grid {
+  background-image:
+    linear-gradient(rgba(201, 155, 50, 0.11) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 155, 50, 0.11) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.soft-noise {
+  background-image:
+    radial-gradient(circle at 15% 18%, rgba(245, 223, 157, 0.52), transparent 25%),
+    radial-gradient(circle at 86% 12%, rgba(255, 255, 255, 0.92), transparent 24%),
+    linear-gradient(135deg, rgba(255, 250, 240, 0.95), rgba(247, 239, 224, 0.74));
+}
+
+.gold-sheen {
+  background-image:
+    linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.62) 44%, rgba(255, 255, 255, 0) 70%),
+    linear-gradient(135deg, #a97919, #f3d574 42%, #b37a17);
+}
+
+.dark-linen {
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(245, 223, 157, 0.16), transparent 30%),
+    linear-gradient(135deg, #221d16, #120f0b);
+}
